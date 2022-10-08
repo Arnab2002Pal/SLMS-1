@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./res/logo.jpg);
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.top-register {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: x-large;
+}
+
+.container-form {
+  margin: auto;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  padding: 3px;
+  width: min-content;
+  height: 480;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 10em;
+}
+#form {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+}
+.left,
+.right {
+  width: 200px;
+  flex-direction: column;
+  display: inline-flex;
+  padding: 8px;
+}
+#haddress,
+#sfname,
+#fname,
+#DOB,
+#pnumber {
+  margin: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+#aadharnum,
+#mname,
+#gen,
+#mailid {
+  margin: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+/* #aadharnum {
+  width: 130px;
+} */
+#verify {
+  width: 38px;
+}
+
+#haddress {
+  width: 397px;
+}
+#reg-btn {
+  width: 100px;
+  margin-left: 42%;
+  margin-top: 30px;
+  align-self: center;
+  padding: 10px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  background-image: linear-gradient(to right, rgba(255, 166, 0, 0.723), rgba(255, 255, 0, 0.729));
+  cursor: pointer;
+  border: none;
+}
+#reg-btn:hover {
+  background-image: linear-gradient(to right,  rgba(255, 255, 0, 0.729),rgba(255, 166, 0, 0.723));
+}

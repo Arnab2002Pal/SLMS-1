@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Scheme</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        
+                        <span class="title"><img src="/res/EDU.svg" alt="" srcset=""></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                    <li>
+                        <a href="edu.html">
+                            <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                            <span class="title">Education Details</span>
+                        </a>
+                </li>
+                <li>
+                    <a href="extraActivity.html">
+                        <span class="icon"><ion-icon name="document-attach-outline"></ion-icon></span>
+                        <span class="title">Extra Cirriculum</span>
+                    </a>
+            </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+                        <label class="title">Service</label>
+                       <select name="links" id="" size="1" onchange="window.location.href=this.value;">
+                        <option value="index.html" selected></option>
+                        <option value="scheme.html">Scheme</option>
+                        <option value="jobs.html">Jobs</option>
+                        <option value="admission.html">Admission</option>
+                       </select>
+                    
+                        
+                       
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="log-out"></ion-icon></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- main -->
+        <div class="main">
+            <div class="topBar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+            </div>
+
+            <div class="b-body">
+                <div class="box">
+                    <h2>List Of Educational Schemes</h2>
+                    <ul class="scheme-list">
+                        <li><span>1</span><a href="https://sje.gujarat.gov.in/dscw/schemes/1555?lang=English">Pre.SSC Scholarship for SC Students</a> </li>
+            
+                        <li><span>2</span><a href="https://sje.gujarat.gov.in/dscw/schemes/1517?lang=English">Pre.SSC Scholarship tothe children those engaged in occupations involvingCleaning and PronetoHealth</a> </li>
+                        
+                        <li><span>3</span><a href="https://sje.gujarat.gov.in/dscw/schemes/1541?lang=English">Specialscholarship to Most backwardCaste Students amongst SC(Vandaniy SantShriVasiyadada Scholarship</a> </li>
+            
+                        <li><span>4</span><a href="https://sje.gujarat.gov.in/dscw/schemes/1523?lang=English">Private Coaching assistance to SC students studying in Std. 11-12 Science Stream</a> </li>
+
+                        <li><span>5</span><a href="https://sje.gujarat.gov.in/dscw/schemes/1519?lang=English">State's Post SSC Scholarship to SC girls students</a> </li>
+
+                        <li><span>6</span><a href="https://sje.gujarat.gov.in/dscw/schemes/1515?lang=English">Financial Assistance to SC Bright Students studying in Selected Schools</a> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="b-body">
+                <div class="box">
+                    <h2>List Of HealthCare Schemes</h2>
+                    <ul class="scheme-list">
+                        <li><span>1</span><a href="https://sje.gujarat.gov.in/dscw/schemes/1555?lang=English">Pre.SSC Scholarship for SC Students</a> </li>
+            
+                        <li><span>2</span><a href="https://sje.gujarat.gov.in/dscw/schemes/1517?lang=English">Pre.SSC Scholarship tothe children those engaged in occupations involvingCleaning and PronetoHealth</a> </li>
+                        
+                        <li><span>3</span><a href="https://sje.gujarat.gov.in/dscw/schemes/1541?lang=English">Specialscholarship to Most backwardCaste Students amongst SC(Vandaniy SantShriVasiyadada Scholarship</a> </li>
+            
+                        <li><span>4</span><a href="https://sje.gujarat.gov.in/dscw/schemes/1523?lang=English">Private Coaching assistance to SC students studying in Std. 11-12 Science Stream</a> </li>
+
+                        <li><span>5</span><a href="https://sje.gujarat.gov.in/dscw/schemes/1519?lang=English">State's Post SSC Scholarship to SC girls students</a> </li>
+
+                        <li><span>6</span><a href="https://sje.gujarat.gov.in/dscw/schemes/1515?lang=English">Financial Assistance to SC Bright Students studying in Selected Schools</a> </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="b-body">
+                <div class="box">
+                    <h2>List Of Education Loan</h2>
+                    <ul class="scheme-list">
+                        <li><span>1</span><a href="https://www.bajajfinserv.in/vidyalakshmi-scheme-education-loan-on-property">Vidyalakshmi Scheme Education Loan</a> </li>
+            
+                        <li><span>2</span><a href="https://www.pnbindia.in/pnbsaraswatiloan.html">PNB Saraswati</a> </li>
+                        
+                        <li><span>3</span><a href="https://www.pnbindia.in/pnb-udaan.html">PNB Udaan</a> </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            <script>
+            // Menu toggle
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+            
+            toggle.onclick = function(){
+                navigation.classList.toggle('active')
+                main.classList.toggle('active')
+            }
+            
+            
+            </script>
+</body>
+

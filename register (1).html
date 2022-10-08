@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./login.html">
+    <link rel="stylesheet" href="asset/register.css">
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="container-form">
+      <!-- <img src="/images.png" alt="avatar" class="avatar-img" /> -->
+      <h3 class="top-register">Register</h3>
+      <form action="#" id="form" method="post">
+        
+          <div class="left">
+            <input type="sname" id="sfname" placeholder="Students's Full Name" required />
+            <input type="text" id="fname" placeholder="Fathers Name" required />
+            <input type="dob" id="DOB" placeholder="Date Of Birth" required>
+            <input type="text" id="pnumber" placeholder="Phone Number" min="10" required>
+            <input type="text" id="haddress" placeholder="Home Address">
+          </div>
+          <div class="right">
+            <input type="text" id="aadharnum" placeholder="Aadhar Card Number" required  /><span class="verify"><button type="button" class="averify" ><ion-icon name="checkmark-outline"></ion-icon></button></span>
+            <!-- <button type="button" id="verify">verify</button> -->
+            <input type="mname" id="mname"placeholder="Mother's Name" required />
+            <input type="gender" id="gen" placeholder="Gender" required />
+            <input type="email" id="mailid" placeholder="Email-ID" required /> 
+          </div>
+        
+      </form>
+      <!-- <div class="container">
+      
+      <div class="popup" id="popup"> -->
+        <button type="submit" onclick="pop()" id="btn">Register</button>
+        <!-- <h2>Thank You!</h2>
+        <p class="para">Your details have been sucessfully submitted.<br>Thanks!<br> You will be shortly notified with you unique Id and password!</p> -->
+        
+
+    <!-- </div>
+    </div>
+  </div> -->
+    <!-- <script>
+      let popup=document.getElementById("popup");
+
+      function openPopup(){
+          popup.classList.add("open-popup");
+
+      }
+      // function closePopup(){
+      //     popup.classList.remove("open-popup");
+
+      // }
+  </script> -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+   function pop(){
+      alert("Thank You!\r\nYour details have been sucessfully submitted.\r\nYou will be shortly notified with you unique Id and password!")
+    }
+    
+  </script>
+  </body>
+</html>

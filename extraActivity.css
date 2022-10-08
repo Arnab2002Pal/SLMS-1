@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --orange: rgb(246, 146, 75);
+    --white: #fff;
+    --grey: #f5f5f5;
+    --black1:#222;
+    --black2:#999;
+
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+}
+
+.navigation{
+    position: fixed;
+    width: 230px;
+    height: 100%;
+    background: linear-gradient(to right ,rgb(248, 100, 26),rgb(249, 197, 75));
+    border-left: 5px solid var(--orange);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+img{
+    margin-top: 9px;
+    margin-left: 11px;
+    width: 130px;
+}
+
+.navigation.active
+{
+    width: 65px;
+}
+
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+    
+}
+
+.navigation ul li:hover{
+    background: var(--white);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.navigation ul li:nth-child(1){
+    margin-bottom: 30px;
+    pointer-events: none;
+}
+
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation ul li:hover a{
+    
+    color: var(--black1);
+    background-color: #fff;
+    border-radius: 30px 30px;
+}
+
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 40px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.navigation ul li a .icon ion-icon{
+    font-size: 1.75em;
+}
+
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 5px;
+    line-height: 40px;
+    text-align: start;
+    white-space:nowrap;
+}
+
+
+.navigation .sub{
+    cursor: pointer;
+    justify-content: space-between;
+    position: relative;
+    left: 80px;
+    background-color: var(--orange);
+    color: white(0, 0, 0);
+   
+}
+.navigation .sub:hover{
+    color: black;
+}
+
+
+
+.main{
+   position: absolute;
+   width: calc(100% - 230px); 
+   left: 230px;
+   min-height: 100vh;
+   background: var(--white);
+   transition: 0.5s;
+}
+
+.main.active{
+    width: calc(100% - 65px);
+    left: 65px;
+}
+
+.topBar{
+    background: linear-gradient(to right ,rgb(255, 255, 255),rgb(26, 137, 248));
+    width: 100%;
+    height: 65px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle{
+    position: relative;
+    top: 0;
+    width: 27px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+
+.b-part{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+
+
+.contain{
+    position: relative;
+    max-width: 1250px;
+    width: 100%;
+    padding: 30px;
+    margin: 0 15px;
+    border-radius: 6px;
+    background: #f0f0f0;
+    box-shadow: rgba(0,0,0,0.1);
+}
+
+.contain header{
+    position: relative;
+    font-size: 25px;
+    font-weight: 600;
+    color: #333;
+}
+
+.contain header::before{
+    content: "";
+    left: 0;
+    position:absolute;
+    bottom: -6px;
+    height: 3px;
+    width: 80px;
+    border-radius:  8px;
+    background-color: #4070f4;
+}
+
+.insider{
+    max-width: 900px;
+    width: 100%;
+    margin-left: 50px;
+    padding: 15px;
+}
+
+._table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+._table :is(th,td)
+{
+    border: 1px solid rgb(206, 205, 205);
+    padding: 8px 10px
+}
+
+.form-controller{
+    border: 1px solid black;
+    outline: none;
+    padding: 3px 12px;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.form-controller:is(:focus, :hover){
+    box-shadow: inset 0 1px 6px #0002;
+}
+
+.add{
+    background-color: rgb(16, 175, 48);
+    border: none;
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px ;
+    cursor: pointer;
+}
+
+.minus{
+    background-color: red;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px ;
+    cursor: pointer;
+}
+
+.action_container:hover{
+filter: hue-rotate(-20deg) brightness(0.97);
+transform: scale(1.05);
+border-color: transparent;
+box-shadow: 0 2px 2px;
+border-radius: 3px;
+}
+
+.action_container:active{
+    transition: unset;
+    transform: scale(.95);
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="extraActivity.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="extra.js">
+    <title>Extra Activity</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#"> 
+                        <span class="title"><img src="/res/EDU.svg" alt="" srcset=""></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                    <li>
+                        <a href="edu.html">
+                            <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                            <span class="title">Education Details</span>
+                        </a>
+                </li>
+                    <li>
+                        <a href="extraActivity.html">
+                            <span class="icon"><ion-icon name="document-attach-outline"></ion-icon></span>
+                            <span class="title">Extra Cirriculum</span>
+                        </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+                        <label class="title">Service</label>
+                       <select name="links" id="" size="1" onchange="window.location.href=this.value;">
+                        <option value="index.html"></option>
+                        <option value="Scheme.html">Scheme</option>
+                        <option value="jobs.html">Jobs</option>
+                        <option value="admission.html">Admission</option>
+                       </select>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="log-out"></ion-icon></span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- main -->
+        <div class="main">
+            <div class="topBar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                
+            </div>
+
+            <div class="b-part">
+
+            <section>
+                <div class="contain">
+                <header>Extra Cirriculum</header>
+                <div class="insider">
+                    <div class="_table">
+                        <table>
+                            <tr>
+                                <th>Curriculum
+                                </th>
+                                <th>Title</th>
+                                <th>Venu</th>
+                                <th>Duration</th>
+                                <th>Certificate</th>
+                                <th width="50px">
+                                    <div class="action_container">
+                                        <button class="add" onclick="create_tr('table_body')"><ion-icon name="add-outline"></ion-icon></button>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-controller"></td>
+                                <td><input type="text" class="form-controller"></td>
+                                <td><input type="text" class="form-controller"></td>
+                                <td><input type="date" class="form-controller"></td>
+                                <td><input type="file" class="form-controller"></td>
+                                <td><div class="action_container">
+                                    <button class="minus" onclick="remove_tr(this)"><ion-icon name="remove-outline"></ion-icon></button>
+                                </div></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>  
+        </section>     
+            
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+// Menu toggle
+let toggle = document.querySelector('.toggle');
+let navigation = document.querySelector('.navigation');
+let main = document.querySelector('.main');
+
+toggle.onclick = function(){
+    navigation.classList.toggle('active')
+    main.classList.toggle('active')
+}
+</script>
+</html>

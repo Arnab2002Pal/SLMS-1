@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(./res/logo.jpg);
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .top-login {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: x-large;
+  }
+  .container-form {
+    margin: auto;
+    margin-top: 12%;
+    margin-bottom: 5%;
+    padding: 25px;
+    width: 300px;
+    height: 480;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 10em;
+  }
+  
+  #form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  #stduniqueid {
+    margin: 15px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    outline: none;
+  }
+  #password {
+    margin: 15px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+  }
+  #check {
+    margin-left: 15px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+  }
+  .forget-pass {
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: blue;
+    cursor: pointer;
+  }
+  .forget-pass:hover {
+    text-decoration: underline;
+  }
+  .btn-login {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    width: 120px;
+    align-self: center;
+    padding: 8px;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, rgba(255, 166, 0, 0.723), rgba(255, 255, 0, 0.729));
+    
+    cursor: pointer;
+    border: none;
+  }
+  .btn-login:hover {
+      background-image: linear-gradient(to right, rgba(255, 255, 0, 0.729), rgba(255, 166, 0, 0.723));
+  }
+  .btn-register {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    /* margin-left: 15px; */
+    width: 120px;
+    padding: 8px;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, rgba(255, 166, 0, 0.723), rgba(255, 255, 0, 0.729));
+    cursor: pointer;
+  
+    border: none;
+  }
+  .btn-register:hover {
+      background-image: linear-gradient(to right,rgba(255, 255, 0, 0.729) , rgba(255, 166, 0, 0.723));
+  }
+  .ahref {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    align-self: center;
+    padding: 5px;
+    border-radius: 15px;
+  }
